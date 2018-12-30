@@ -1,0 +1,16 @@
+<li>
+  <div class="content"
+       [ngStyle]="{'background-color':this.color}"
+       [attr.data-id]="componentId"
+       #contentNode>
+    <br>
+    <ng-content select="div"></ng-content>
+    <div style="border:1px solid blue">I am child content</div>
+  </div>
+  <ul #ref [class.empty]="ref.children.length === 0" >
+
+    <ng-content></ng-content>
+
+  </ul>
+</li>
+

@@ -1,0 +1,8 @@
+<ng-template #thumbnailTemplate let-option="option">
+  <div>
+    <a href="#" (click)="deleteView(option)">Delete {{option.description}}</a>
+  </div>
+</ng-template>
+<button #showTmplButton (click)="showTemplate()">{{buttonTitle}} </button>
+<ng-container #vc></ng-container>
+<button #viewInfo (click)= "printViewInfo()" >View Info</button>

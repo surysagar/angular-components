@@ -1,0 +1,31 @@
+<div class="containers">
+  <div class="container">
+    <h4>On push strategy with an Value</h4>
+    <label for="onpush-input">Input:</label><br/>
+    <input type="text" [(ngModel)]="value" name="default-input"  class="onpush-input"/>
+    <onpush-value [msg]="value"></onpush-value>
+  </div>
+
+  <div class="container">
+    <h4>On push strategy with an object</h4>
+    <label for="onpush-input">Input:</label><br/>
+    <input type="text" [(ngModel)]="onpush1.value" name="default-input"  class="onpush-input"/>
+    <onpush-object [msg]="onpush"></onpush-object>
+  </div>
+
+  <div class="container">
+    <h4>Default strategy with an object</h4>
+    <label for="default-input">Input:</label><br/>
+    <input type="text" [(ngModel)]="default.value" name="default-input"  class="default-input"/>
+    <default-object [msg]="default"></default-object>
+  </div>
+</div>
+
+<div class="containers">
+<div class="container">
+  <h1>Reactive solution for on push detection strategy</h1>
+  <label for="onpush-input">Input:</label><br/>
+  <input type="text" name="default-input" #inputOnpush class="onpush-input"/><br/>
+  <onpush-object [msg]="changeObservable$"></onpush-object>
+</div>
+</div>

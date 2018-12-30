@@ -1,0 +1,15 @@
+p {
+  font-family: Lato;
+}
+
+.blueClass{
+  color:blue;
+}
+
+.boldClass{
+  font-variant: small-caps;
+}
+
+button{
+  display:block;
+}
